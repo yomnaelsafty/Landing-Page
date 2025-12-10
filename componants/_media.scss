@@ -1,0 +1,235 @@
+/* MEDIA QUERIES  */
+
+/*   Large Tablet <=1024px   */
+
+@media (max-width: 1024px) {
+  /* Header */
+  .navigation__list {
+    gap: 1rem;
+  }
+
+  /* About & Features */
+  .about,
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Icons */
+  .icons {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .icon:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Pricing */
+  .pricing__plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Global images */
+  .global__img {
+    min-width: 0;
+    width: 90%;
+    height: auto;
+  }
+
+  .global__img2 {
+    min-width: 0;
+    width: 85%;
+    height: auto;
+  }
+
+  /* Testimonials slider */
+  .slider {
+    gap: 1rem;
+    overflow-x: auto;
+  }
+
+  .slider .card {
+    min-width: 300px;
+    padding: 1.5rem;
+  }
+
+  /* Subscription section */
+  .subscription {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .subscription__title {
+    font-size: 28px;
+  }
+
+  .subscription__description {
+    font-size: 14px;
+  }
+
+  .subscription__button .subscrption-btn {
+    padding: 0.8rem 2rem;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-part {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .left-part {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ------------------------- */
+/*     Tablet Small <=768px  */
+/* ------------------------- */
+@media (max-width: 768px) {
+  /* Global images */
+  .global__img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  .global__img2 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  /* Testimonials slider */
+  .slider .card {
+    min-width: 250px;
+    padding: 1.2rem;
+  }
+
+  /* Subscription */
+  .subscription {
+    max-width: 90%;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .subscription__title {
+    font-size: 24px;
+  }
+
+  .subscription__description {
+    font-size: 13px;
+  }
+
+  .subscription__button .subscrption-btn {
+    padding: 0.7rem 1rem;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .right-part {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ------------------------- */
+/*        Mobile <=480px     */
+/* ------------------------- */
+@media (max-width: 480px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /* About & Features */
+  .about__heading,
+  .features__title,
+  .pricing__title {
+    font-size: 1.5rem;
+  }
+
+  .about__description,
+  .features__description,
+  .pricing__description {
+    font-size: 0.95rem;
+  }
+
+  .start__button,
+  .pricing__button {
+    padding: 0.5rem 1.5rem;
+  }
+
+  /* Global images */
+  .global__img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .global__img2 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* Testimonials slider */
+  .slider {
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider .card {
+    min-width: 200px;
+    padding: 1rem;
+    scroll-snap-align: start;
+  }
+
+  /* Subscription */
+  .subscription {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .subscription__title {
+    font-size: 20px;
+  }
+
+  .subscription__description {
+    font-size: 12px;
+  }
+
+  .subscription__button .subscrption-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 12px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-part {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .left-part {
+    margin-bottom: 1.5rem;
+  }
+}

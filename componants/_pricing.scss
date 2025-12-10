@@ -1,0 +1,150 @@
+/* PRICING SECTION */
+
+.pricing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.pricing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% + 400px);
+  background: #fafafa;
+  z-index: -1;
+}
+
+.pricing__data {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing__title {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 35px;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.pricing__description {
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f5665;
+  padding-bottom: 2rem;
+}
+
+.pricing__plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+/* PLAN CARD */
+.plan {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 330px;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  gap: 1.5rem;
+}
+
+.plan:hover {
+  border-color: var(--red);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* LIST INSIDE PLAN */
+.pricing__items {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.pricing__items li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+.pricing__plan-title {
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18;
+  padding-top: 1rem;
+}
+
+/* PRICE + BUTTON FIXED AT BOTTOM */
+.pricing__choice {
+  margin-top: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pricing__plan-type {
+  display: flex;
+  align-items: end;
+  gap: 0.25rem;
+}
+
+.pricing__plan-type1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pricing__plan-type2 {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+/* SELECT BUTTON EXACT FIGMA SIZE */
+.pricing__button {
+  width: 177.88px;
+  height: 45px;
+  border-radius: 50px;
+  background: #fff;
+  border: 2px solid var(--red);
+  color: var(--red);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.plan:hover .pricing__button {
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(245, 56, 56, 0.4);
+}
